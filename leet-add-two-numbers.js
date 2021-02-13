@@ -97,7 +97,10 @@ var addTwoNumbers = function (l1, l2) {
 //     return result;
 
 //// trial-3
-// cause of error: Works in most cases. However, sum at Line 118 be like 1e+30, when it's given [1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1], [5,6,4] as a test case. Thus, its output becomes [0,3,NaN,NaN,1]
+// cause of error: Works in most cases. However, sum at Line 117 be like 1e+30, 
+// when it's given [1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1], [5,6,4] as a test case
+// resulting in return value as [0,3,NaN,NaN,1]
+
 //    let num1 = "";
 //    let num2 = "";
 
