@@ -67,8 +67,8 @@ var longestPalindrome = function (s) {
 
 // trial-2
 // cause of error: array in javascript is reference type as opposed to primitive type.
-// Line 80 and line 81 are different variables, meaning they are pointing different references.
-// Thus, Line 83 will always be false.
+// Line 79 and line 80 are different variables, meaning they are pointing different references.
+// Thus, Line 82 will always be false.
 
 // var longestPalindrome = function(s) {
 //     let longestStr = "";
