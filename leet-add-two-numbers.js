@@ -18,7 +18,7 @@ Example:
     Explanation: 342 + 465 = 807.
 */
 
-// Solution
+// Solution (Reference)
 var addTwoNumbers = function (l1, l2) {
   var List = new ListNode(0);
   var head = List;
