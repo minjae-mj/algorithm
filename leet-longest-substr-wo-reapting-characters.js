@@ -86,25 +86,25 @@ var lengthOfLongestSubstring = function (s) {
 //     return Math.max(...substrLeng);
 // };
 
-//// reference
+//// Reference
 // performance wise, below code is 5 times faster and uses half of the memory compared to my solution.
-// const lengthOfLongestSubstring = function(s) {
-//     let longestStr = '';
-//     let currentStr = '';
+const lengthOfLongestSubstring = function(s) {
+    let longestStr = '';
+    let currentStr = '';
 
-//     for(let i = 0; i < s.length; i++) {
-//       let letter = s[i];
-//       let index = currentStr.indexOf(letter);
+    for(let i = 0; i < s.length; i++) {
+      let letter = s[i];
+      let index = currentStr.indexOf(letter);
 
-//       if(index > -1) {
-//         if(currentStr.length > longestStr.length) longestStr = currentStr;
-//         currentStr = currentStr.slice(index + 1) + letter;
-//       }
-//       else {
-//         currentStr += letter;
-//       }
-//     }
-//     if(currentStr.length > longestStr.length) longestStr = currentStr;
+      if(index > -1) {
+        if(currentStr.length > longestStr.length) longestStr = currentStr;
+        currentStr = currentStr.slice(index + 1) + letter;
+      }
+      else {
+        currentStr += letter;
+      }
+    }
+    if(currentStr.length > longestStr.length) longestStr = currentStr;
 
-//     return longestStr.length;
-// }
+    return longestStr.length;
+}
