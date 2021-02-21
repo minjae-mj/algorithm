@@ -53,22 +53,22 @@ var maxArea = function (height) {
 //   return result;
 // };
 
-//// reference
+//// Reference
 // performance wise, below is 23times faster solution.
-// const maxArea = (height) => {
-// 	let result = 0,
-// 		left = 0,
-// 		right = height.length - 1;
+const maxArea = (height) => {
+	let result = 0,
+		left = 0,
+		right = height.length - 1;
 
-// 	while (left < right) {
-// 		let smallestSide = Math.min(height[left], height[right]);
-// 		let area = (right - left) * smallestSide;
+	while (left < right) {
+		let smallestSide = Math.min(height[left], height[right]);
+		let area = (right - left) * smallestSide;
 
-// 		if (area > result) result = area;
+		if (area > result) result = area;
 
-// 		if (height[left] < height[right]) left++;
-// 		else right--;
-// 	}
+		if (height[left] < height[right]) left++;
+		else right--;
+	}
 
-// 	return result;
-// };
+	return result;
+};
